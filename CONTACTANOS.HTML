@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="FORMULARIO.CSS">
+</head>
+<body>
+  <header>
+    <h1>PIZZERIA EL OLIMPICO</h1>
+  </header>
+
+  <nav>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="Menu.html">Menu</a>
+          <ul>
+           <li><a href="#">Pizza Margherita</a>
+           <li><a href="#">Pizza Pepperoni</a>
+           <li><a href="#">Pizza Hawaiana</a>
+           <li><a href="#">Pizza Americana</a>
+           <li><a href="#">BBC:Buffalo Chicken</a>
+          </ul>
+        </li>
+        <li><a href="CONTACTANOS.HTML">Contacto</a></li>
+        <li><a href="Sobre_Nosotros.html">Sobre Nosotros</li>
+        <li><a href="#">Ofertas</a></li>
+      </ul>
+  </nav>
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>Si tienes alguna consulta o comentario, por favor, completa el siguiente formulario y nos pondremos en contacto contigo.</p>
+    <form action="/contacto" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+        <input type="submit" value="Enviar mensaje">
+    </form>
+  </section>
+ <footer>
+    <p>&copy; 2023 Pizzería El Olimpo</p>
+  </footer>
+</body>
+</html>
